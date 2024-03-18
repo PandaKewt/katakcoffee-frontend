@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    @apply w-screen h-screen flex flex-col;
+}
+section {
+    @apply flex flex-col justify-center w-full py-16 px-16 space-y-16;
+}
+.header {
+    @apply font-bold uppercase;
+}
+h2 {
+    @apply header text-3xl text-center;
+}
+h3 {
+    @apply header text-2xl;
+}
+.navbar {
+    @apply flex justify-around items-center h-20 w-full bg-secondary;
+}
+.navbar-menu {
+    @apply flex space-x-3;
+}
+.navbar-social {
+    @apply navbar-menu;
+}
+.main {
+    @apply flex-1 overflow-y-auto;
+}
+.content {
+    @apply w-full;
+}
+.hero {
+    @apply h-2/3 bg-amber-200;
+}
+
+.about-katak {
+    @apply items-center;
+}
+.about-katak-content-container {
+    @apply flex flex-col xl:flex-row justify-between items-center xl:space-x-5;
+}
+.about-katak-content {
+    @apply w-full xl:w-4/12 text-center;
+}
+.about-katak-content-left {
+    @apply about-katak-content order-2 mt-5 xl:order-1 xl:mt-0 xl:text-left;
+}
+.about-katak-content-right {
+    @apply about-katak-content order-3 mt-5 xl:mt-0 xl:text-right;
+}
+.about-katak-content-image {
+    @apply bg-black size-96 order-1 xl:order-2;
+}
+.about-katak-button {
+    @apply bg-primary py-2 px-5 text-white;
+}
+.items-container {
+    @apply bg-shadow text-white;
+}
+.items-content {
+    @apply flex flex-col items-center space-y-10 justify-between xl:flex-row xl:space-y-0;
+}
+.item-container {
+    @apply w-80;
+}
+.item-image {
+    @apply size-80 bg-black;
+}
+.item-name {
+    @apply text-2xl;
+}
+.item-content {
+    @apply flex justify-between;
+}
+.customer-tell {
+    /*@apply*/
+}
