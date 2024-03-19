@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+}
+#slideshow{
+    width: 100%;
+    height: 45%;
+    background-color: bisque;
+}
+
+#dadbox{
+    display: flex;
+    width: auto;
+    flex-direction: column;
+    // justify-content: first baseline;
+    margin: 0 1rem 0 1rem;
+    
+    #tittle{
+        font-size: 3rem;
+        margin: 0 0 0 2rem;
+        color: #9f7348;
+        font-weight: bold;
+    }
+    #line{
+        width: 60%;
+        height: 0.1rem;
+        background-color: black;
+        margin: 0 0 2rem;
+
+
+    }
+    .drink_box{
+        width: 100%;
+        margin:  3rem;
+        // display: flex;
+     
+    }
+}
+#wrap_box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+#btn{
+    background-color: #9f7348;
+    padding: 0.2rem;
+    width: 10rem;
+    border-radius: 0.2rem;
+    color: white;
+    margin: 1rem 0 0 25%;
+
+}
+.box_fstars{
+    display: flex;
+    gap: 0.5rem;
+    justify-content: space-evenly;
+    .fstars{
+        width: 2rem;
+
+    }
+}

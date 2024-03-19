@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+
+    #main_box{
+        width: auto;
+        height: 20rem;
+        background-color: bisque;
+        display: flex;
+        gap: 1rem;
+        // margin: 2rem 2rem 0 2rem;
+        #information_product{
+            
+            #tittle{
+                
+            };
+            #discount{
+                display: flex;
+                gap: 1rem
+            } 
+        }
+    };
+};
+
+@media (max-width :640px) {
+    #wrap_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        #main_box{
+            width: auto;
+            height: 15rem;
+            background-color: white;
+            display: flex;
+            margin: 2rem;
+            justify-content: space-evenly;
+            #img_product{
+                width: 230px;
+                height: auto;
+            }
+           
+            #information_product{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                #tittle{
+                    font-weight: bold;
+                    font-size: 1.5rem
+                };
+                #discount{
+                    display: flex;
+                    gap: 1rem;
+                    color: #a0744c;
+                    #line_through{
+                        text-decoration: line-through;
+                        color: gray;
+                        
+                    }
+                    #sale{
+                        width: 3rem;
+                        border: solid 0.1rem;
+                        text-align: center
+                    }
+                };
+                #material_01{
+                    font-weight: bold
+                };
+                #material_02{
+                    font-size: 0.7rem
+                };
+                #div_amount_UD{
+                    display: flex;
+                    gap: 0.5rem;
+                    #num_box_sizing{
+                        width: 5rem
+                    };
+                    .btn_sizing_box{
+                        width: 2rem;
+                        background-color: white
+                    };
+                };
+                #div_buying_btn{
+                    #btn_buying{
+                        width: 100%;
+                        background-color: #a0744c;
+                        color:white
+                    }
+                }
+            };
+        };
+       #more_img_line{
+            display: flex;
+            gap: 1rem   ;
+            .more_img{
+                width: 5rem;
+                height: 5rem
+            };
+       };
+       .line{
+        width: 80%;
+        border: solid 1px gray;
+        margin: 1rem 0 0 0
+       }
+       #discription{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        border-top: solid;
+        border-bottom: solid ;
+        padding: 1rem ;
+        margin: 1rem;
+            #tittle_discription{
+                font-size: 1.5rem;
+                font-weight: bold
+
+            }
+       }
+       #other_drinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        gap: 1rem;
+         >h2{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #a0744c
+         };
+         #OD_imgs{
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            gap: 1rem;
+            justify-content: space-between;
+            >div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: 5rem;
+                gap: 1rem;
+                width: 50%;
+
+                >img{
+                    width: 10rem;
+                    height: 8rem
+                }
+            };
+         }
+       }
+    };
+};  
+
