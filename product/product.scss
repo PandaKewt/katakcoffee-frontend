@@ -1,27 +1,138 @@
 *{
     margin: 0;
-
+};
+#wrap_box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     #main_box{
         width: auto;
-        height: 20rem;
-        background-color: bisque;
+        background-color: white;
         display: flex;
-        gap: 1rem;
-        // margin: 2rem 2rem 0 2rem;
+        margin: 2rem;
+        gap:1rem;
+        justify-content: space-evenly;
+        #img_product{
+            width: 200px;
+        }
         #information_product{
-            
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
             #tittle{
-                
+                font-weight: bold;
+                font-size: 1.2rem
             };
             #discount{
                 display: flex;
-                gap: 1rem
-            } 
-        }
+                gap: 1rem;
+                color: #a0744c;
+                >p{
+                    font-size: 0.9rem;
+                }
+                #line_through{
+                    text-decoration: line-through;
+                    color: gray;
+                    
+                }
+                #sale{
+                    width: 3rem;
+                    border: solid 0.1rem;
+                    text-align: center
+                }
+            };
+            #material_01{
+                font-weight: bold
+            };
+            #material_02{
+                font-size: 0.6rem
+            };
+            #div_amount_UD{
+                display: flex;
+                gap: 0.3rem;
+                margin: 0 0 1rem 0;
+                #num_box_sizing{
+                    width: 2rem;
+                    border: 0.1rem solid #a0744c;
+                    border-radius: 0.1rem
+                };
+                .btn_sizing_box{
+                    width: rem;
+                    background-color: #a0744c
+                };
+            };
+            #div_buying_btn{
+                #btn_buying{
+                    width: 100%;
+                    background-color: #a0744c;
+                    color:white
+                }
+            }
+        };
     };
-};
+   #more_img_line{
+        display: flex;
+        gap: 1rem   ;
+        .more_img{
+            width: 5rem;
+            height: 5rem
+        };
+   };
+   .line{
+    width: 80%;
+    border: solid 1px gray;
+    margin: 1rem 0 0 0
+   }
+   #discription{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    border-top: solid;
+    border-bottom: solid ;
+    padding: 1rem ;
+    margin: 1rem;
+        #tittle_discription{
+            font-size: 1.5rem;
+            font-weight: bold
+        }
+   }
+   #other_drinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    gap: 1rem;
+     >h2{
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #a0744c
+     };
+     #OD_imgs{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        gap: 1rem;
+        justify-content: space-between;
+        >div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: rem;
+            gap: 1rem;
 
-@media (max-width :640px) {
+            >img{
+                width: rem;
+                height: 4rem
+            }
+        };
+     }
+   }
+};
+@media (max-width: 390px) {
     #wrap_box{
         display: flex;
         flex-direction: column;
@@ -29,16 +140,14 @@
         justify-content: space-between;
         #main_box{
             width: auto;
-            height: 15rem;
             background-color: white;
             display: flex;
             margin: 2rem;
+            gap:1rem;
             justify-content: space-evenly;
             #img_product{
                 width: 230px;
-                height: auto;
             }
-           
             #information_product{
                 display: flex;
                 flex-direction: column;
@@ -69,35 +178,39 @@
                     font-size: 0.7rem
                 };
                 #div_amount_UD{
-                    display: flex;
-                    gap: 0.5rem;
+                    position: fixed;
+                    top: 95%;
+                    left: 10%;
+                    border: black;
                     #num_box_sizing{
-                        width: 5rem
+                        width: 5rem;
+                        border: 0.1rem solid #a0744c;
+                        border-radius: 0.1rem
                     };
                     .btn_sizing_box{
                         width: 2rem;
-                        background-color: white
+                        background-color: #a0744c
+                    };
+                    #div_buying_btn{
+                        #btn_buying{
+                            width: 100%;
+                            background-color: #a0744c;
+                            color:white
+                        };
                     };
                 };
-                #div_buying_btn{
-                    #btn_buying{
-                        width: 100%;
-                        background-color: #a0744c;
-                        color:white
-                    }
-                }
             };
         };
        #more_img_line{
             display: flex;
             gap: 1rem   ;
             .more_img{
-                width: 5rem;
-                height: 5rem
+                width: 6.5rem;
+                height: 6.5rem
             };
        };
        .line{
-        width: 80%;
+        width: 85%;
         border: solid 1px gray;
         margin: 1rem 0 0 0
        }
@@ -105,7 +218,7 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
-        width: 80%;
+        width: 90%;
         border-top: solid;
         border-bottom: solid ;
         padding: 1rem ;
@@ -113,7 +226,6 @@
             #tittle_discription{
                 font-size: 1.5rem;
                 font-weight: bold
-
             }
        }
        #other_drinks{
@@ -131,6 +243,7 @@
          #OD_imgs{
             display: flex;
             flex-direction: row;
+            flex-wrap: wrap;
             width: 100%;
             gap: 1rem;
             justify-content: space-between;
@@ -138,17 +251,148 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
-                width: 5rem;
+                width: rem;
                 gap: 1rem;
-                width: 50%;
-
+    
                 >img{
-                    width: 10rem;
-                    height: 8rem
+                    width: 7rem;
+                    height: 5rem
                 }
             };
          }
        }
     };
-};  
+}
 
+@media (min-width: 640px), (min-width: 768px) {
+    #wrap_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        #main_box{
+            width: auto;
+            background-color: white;
+            display: flex;
+            margin: 2rem;
+            gap:1rem;
+            justify-content: space-evenly;
+            #img_product{
+                width: 450px;
+            }
+            #information_product{
+                display: flex;
+                flex-direction: column;
+                justify-content: space-evenly;
+                #tittle{
+                    font-weight: bold;
+                    font-size: 1.8rem
+                };
+                #discount{
+                    display: flex;
+                    gap: 1rem;
+                    color: #a0744c;
+                    #line_through{
+                        text-decoration: line-through;
+                        color: gray;
+                        
+                    }
+                    #sale{
+                        width: 3rem;
+                        border: solid 0.1rem;
+                        text-align: center
+                    }
+                };
+                #material_01{
+                    font-weight: bold
+                };
+                #material_02{
+                    font-size: 0.7rem
+                };
+                #div_amount_UD{
+                    display: flex;
+                    gap: 0.5rem;
+                    margin: 1rem 0 1rem 0;
+                    #num_box_sizing{
+                        width: 5rem;
+                        border: 0.1rem solid #a0744c;
+                        border-radius: 0.1rem
+                    };
+                    .btn_sizing_box{
+                        width: 2rem;
+                        background-color: #a0744c
+                    };
+                };
+                #div_buying_btn{
+                    #btn_buying{
+                        width: 100%;
+                        background-color: #a0744c;
+                        color:white;
+                        height: 4.8rem;
+                        font-size: 1.2rem;
+                        font-weight: bold
+                    }
+                }
+            };
+        };
+       #more_img_line{
+            display: flex;
+            gap: 1rem   ;
+            .more_img{
+                width: 8rem;
+            };
+       };
+       .line{
+        width: 85%;
+        border: solid 1px gray;
+        margin: 1rem 0 0 0
+       }
+       #discription{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 90%;
+        border-top: solid;
+        border-bottom: solid ;
+        padding: 1rem ;
+        margin: 1rem;
+            #tittle_discription{
+                font-size: 1.5rem;
+                font-weight: bold
+            }
+       }
+       #other_drinks{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 500px;
+        gap: 1rem;
+         >h2{
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #a0744c
+         };
+         #OD_imgs{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            gap: rem;
+            justify-content: space-between;
+            >div{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                width: rem;
+                gap: 1rem;
+    
+                >img{
+                    width: 7rem;
+                    height: 7rem
+                }
+            };
+         }
+       }
+    };
+}
